@@ -55,7 +55,7 @@ export default function Live2D() {
       <Script
         onLoad={() => {
           new l2dViewer({
-            el: document.getElementById('L2dCanvas'),
+            el: document.getElementById('live2d'),
             basePath: 'https://cdn.jsdelivr.net/npm/live2dv3@latest/assets',
             modelName: 'biaoqiang_3',
             sounds: [
