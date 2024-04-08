@@ -47,8 +47,7 @@ export default function Live2D() {
     <canvas id="live2d" width="400" height="450" onClick={handleClick}
         className="cursor-grab"
         onMouseDown={(e) => e.target.classList.add('cursor-grabbing')}
-        onMouseUp={(e) => e.target.classList.remove('cursor-grabbing')}
-    />
+        onMouseUp={(e) => e.target.classList.remove('cursor-grabbing')}/>
       <Script src="https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js"/>
       <Script src="https://cdn.jsdelivr.net/npm/pixi.js@4.6.1/dist/pixi.min.js"/>
       <Script src="https://cdn.jsdelivr.net/npm/live2dv3@1.2.2/live2dv3.min.js"/>
