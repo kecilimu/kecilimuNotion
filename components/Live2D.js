@@ -58,10 +58,6 @@ export default function Live2D() {
             el: document.getElementById('live2d'),
             basePath: 'https://cdn.jsdelivr.net/npm/live2dv3@latest/assets',
             modelName: 'biaoqiang_3',
-            sounds: [
-                'sounds/demo.mp3', // 相对路径是相对于模型文件夹
-                'https://cdn.jsdelivr.net/npm/live2dv3@latest/assets/biaoqiang_3/sounds/demo.mp3' // 也可以是网址
-            ]
         })
         }}
       />
