@@ -32,6 +32,11 @@ export default function Live2D() {
 *    }
 *  }, [theme])
 */
+/*    <canvas id="live2d" width="400" height="450" onClick={handleClick}
+*        className="cursor-grab"
+*       onMouseDown={(e) => e.target.classList.add('cursor-grabbing')}
+*      onMouseUp={(e) => e.target.classList.remove('cursor-grabbing')}/>
+*/
   function handleClick() {
     if (JSON.parse(siteConfig('WIDGET_PET_SWITCH_THEME'))) {
       switchTheme()
@@ -44,11 +49,6 @@ export default function Live2D() {
 
   return (
     <>
-/*    <canvas id="live2d" width="400" height="450" onClick={handleClick}
-*        className="cursor-grab"
-*       onMouseDown={(e) => e.target.classList.add('cursor-grabbing')}
-*      onMouseUp={(e) => e.target.classList.remove('cursor-grabbing')}/>
-*/
       <div class="Canvas" style="position: fixed; right: 10px; bottom: 10px;z-index: 99999999" id="live2d">
     </div>
       <Script src="https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js"/>
