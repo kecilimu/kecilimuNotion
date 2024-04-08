@@ -14,23 +14,23 @@ export default function Live2D() {
   const showPet = JSON.parse(siteConfig('WIDGET_PET'))
   const petLink = siteConfig('WIDGET_PET_LINK')
 /*
-  useEffect(() => {
-    if (showPet && !isMobile()) {
-      Promise.all([
-        loadExternalResource('https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/live2d.min.js', 'js')
-      ]).then((e) => {
-        if (typeof window?.loadlive2d !== 'undefined') {
-          // https://github.com/xiazeyu/live2d-widget-models
-          try {
-            loadlive2d('live2d', petLink)
-          } catch (error) {
-            console.error('读取PET模型', error)
-          }
-        }
-       
-      })
-    }
-  }, [theme])
+*  useEffect(() => {
+*    if (showPet && !isMobile()) {
+*      Promise.all([
+*        loadExternalResource('https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/live2d.min.js', 'js')
+*      ]).then((e) => {
+*        if (typeof window?.loadlive2d !== 'undefined') {
+*          // https://github.com/xiazeyu/live2d-widget-models
+*          try {
+*            loadlive2d('live2d', petLink)
+*          } catch (error) {
+*            console.error('读取PET模型', error)
+*          }
+*        }
+*       
+*      })
+*    }
+*  }, [theme])
 */
   function handleClick() {
     if (JSON.parse(siteConfig('WIDGET_PET_SWITCH_THEME'))) {
@@ -45,9 +45,9 @@ export default function Live2D() {
   return (
     <>
 /*    <canvas id="live2d" width="400" height="450" onClick={handleClick}
-        className="cursor-grab"
-        onMouseDown={(e) => e.target.classList.add('cursor-grabbing')}
-        onMouseUp={(e) => e.target.classList.remove('cursor-grabbing')}/>
+*        className="cursor-grab"
+*       onMouseDown={(e) => e.target.classList.add('cursor-grabbing')}
+*      onMouseUp={(e) => e.target.classList.remove('cursor-grabbing')}/>
 */
       <div class="Canvas" style="position: fixed; right: 10px; bottom: 10px;z-index: 99999999" id="live2d">
     </div>
