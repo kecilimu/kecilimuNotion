@@ -13,7 +13,7 @@ export default function Live2D() {
   const { theme, switchTheme } = useGlobal()
   const showPet = JSON.parse(siteConfig('WIDGET_PET'))
   const petLink = siteConfig('WIDGET_PET_LINK')
-/*
+/**
 *  useEffect(() => {
 *    if (showPet && !isMobile()) {
 *      Promise.all([
@@ -32,7 +32,8 @@ export default function Live2D() {
 *    }
 *  }, [theme])
 */
-/*    <canvas id="live2d" width="400" height="450" onClick={handleClick}
+/**
+*    <canvas id="live2d" width="400" height="450" onClick={handleClick}
 *        className="cursor-grab"
 *       onMouseDown={(e) => e.target.classList.add('cursor-grabbing')}
 *      onMouseUp={(e) => e.target.classList.remove('cursor-grabbing')}/>
