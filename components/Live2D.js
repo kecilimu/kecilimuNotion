@@ -19,9 +19,11 @@ export default function Live2D() {
         loadExternalResource('https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/live2d.min.js', 'js'),
         loadExternalResource('https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js', 'js'),
         loadExternalResource('https://cdn.jsdelivr.net/npm/pixi.js@4.6.1/dist/pixi.min.js', 'js'),
-        loadExternalResource('https://cdn.jsdelivr.net/npm/live2dv3@1.2.2/live2dv3.min.js', 'js')
+        loadExternalResource('https://cdn.jsdelivr.net/npm/live2dv3@1.2.2/live2dv3.min.js', 'js'),
+        loadExternalResource('https://raw.githubusercontent.com/HCLonely/Live2dV3/master/live2dv3.js', 'js')
+        
       ]).then((e) => {
-         new l2dViewer({
+         l2dv = new l2dViewer({
             el: document.getElementById('live2d'),
             basePath: 'https://cdn.jsdelivr.net/npm/live2dv3@latest/assets',
             modelName: 'biaoqiang_3',
