@@ -13,7 +13,7 @@ export default function Live2D() {
   const { theme, switchTheme } = useGlobal()
   const showPet = JSON.parse(siteConfig('WIDGET_PET'))
   const petLink = siteConfig('WIDGET_PET_LINK')
-
+/*
   useEffect(() => {
     if (showPet && !isMobile()) {
       Promise.all([
@@ -31,7 +31,7 @@ export default function Live2D() {
       })
     }
   }, [theme])
-
+*/
   function handleClick() {
     if (JSON.parse(siteConfig('WIDGET_PET_SWITCH_THEME'))) {
       switchTheme()
