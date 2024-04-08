@@ -254,7 +254,7 @@ const BLOG = {
   WIDGET_PET: process.env.NEXT_PUBLIC_WIDGET_PET || true, // 是否显示宠物挂件
   WIDGET_PET_LINK:
     process.env.NEXT_PUBLIC_WIDGET_PET_LINK ||
-    'https://raw.githubusercontent.com/Eikanya/Live2d-model/master/%E9%AD%82%E5%99%A8%E5%AD%A6%E9%99%A2%20(%E7%82%BC%E9%93%9C%E5%AD%A6%E9%99%A2)/live2d/13181/Lead_00.model.json', // 挂件模型地址 @see https://github.com/xiazeyu/live2d-widget-models
+    'https://raw.githubusercontent.com/Eikanya/Live2d-model/master/%E9%AD%82%E5%99%A8%E5%AD%A6%E9%99%A2%20(%E7%82%BC%E9%93%9C%E5%AD%A6%E9%99%A2)/live2d/6300019/Lead_00.model.json', // 挂件模型地址 @see https://github.com/xiazeyu/live2d-widget-models
   WIDGET_PET_SWITCH_THEME: process.env.NEXT_PUBLIC_WIDGET_PET_SWITCH_THEME || false, // 点击宠物挂件切换博客主题
 
   // 音乐播放插件
