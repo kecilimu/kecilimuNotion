@@ -21,6 +21,15 @@ export default function Live2D() {
         loadExternalResource('https://cdn.jsdelivr.net/npm/pixi.js@4.6.1/dist/pixi.min.js', 'js'),
         loadExternalResource('https://cdn.jsdelivr.net/npm/live2dv3@1.2.2/live2dv3.min.js', 'js')
       ]).then((e) => {
+         new l2dViewer({
+            el: document.getElementById('live2d'),
+            basePath: 'https://cdn.jsdelivr.net/npm/live2dv3@latest/assets',
+            modelName: 'biaoqiang_3',
+            sounds: [
+                'sounds/demo.mp3', // 相对路径是相对于模型文件夹
+                'https://cdn.jsdelivr.net/npm/live2dv3@latest/assets/biaoqiang_3/sounds/demo.mp3' // 也可以是网址
+            ]
+        })
         if (typeof window?.loadlive2d !== 'undefined') {
           // https://github.com/xiazeyu/live2d-widget-models
           try {
@@ -29,6 +38,7 @@ export default function Live2D() {
             console.error('读取PET模型', error)
           }
         }
+       
       })
     }
   }, [theme])
