@@ -16,7 +16,10 @@ export default function Live2D() {
   useEffect(() => {
     if (showPet && !isMobile()) {
       Promise.all([
-        loadExternalResource('https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/live2d.min.js', 'js')
+        loadExternalResource('https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/live2d.min.js', 'js'),
+        loadExternalResource('https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js', 'js'),
+        loadExternalResource('https://cdn.jsdelivr.net/npm/pixi.js@4.6.1/dist/pixi.min.js', 'js'),
+        loadExternalResource('https://cdn.jsdelivr.net/npm/live2dv3@1.2.2/live2dv3.min.js', 'js')
       ]).then((e) => {
         if (typeof window?.loadlive2d !== 'undefined') {
           // https://github.com/xiazeyu/live2d-widget-models
